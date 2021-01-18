@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'react-router-dom';
 
 import { Wrapper, Content, TMDBLogoImg } from './Header.styles';
 import TMDBLogo from '../../images/tmdb_logo.svg';
@@ -6,8 +7,11 @@ import TMDBLogo from '../../images/tmdb_logo.svg';
 const Header = () => (
     <Wrapper>
         <Content>
-            <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
+            <Link to='/'>
             <h1>Movie Madness</h1>
+            </Link>
+            <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
+            
         </Content>
     </Wrapper>
 );
