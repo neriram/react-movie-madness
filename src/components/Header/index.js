@@ -7,6 +7,7 @@ const Header = () => (
     <Wrapper>
         <Content>
             <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
+            <h1>Movie Madness</h1>
         </Content>
     </Wrapper>
 );
